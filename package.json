@@ -3,9 +3,20 @@
   "version": "1.0.0",
   "description": "Software Simulacion proyecto",
   "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {},
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.2",
+    "crypto": "^1.0.1",
+    "express-handlebars": "^3.0.0",
+    "jwt-simple": "^0.5.1",
+    "moment": "^2.22.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.4"
+  },
   "scripts": {
+    "start": "node index.js",
+    "serve": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
