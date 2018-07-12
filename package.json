@@ -1,0 +1,21 @@
+{
+  "name": "tecnicas_simulacion",
+  "version": "1.0.0",
+  "description": "Software Simulacion proyecto",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CuartoHokage/Tecnicas_simulacion.git"
+  },
+  "author": "Jaime Paz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CuartoHokage/Tecnicas_simulacion/issues"
+  },
+  "homepage": "https://github.com/CuartoHokage/Tecnicas_simulacion#readme"
+}
