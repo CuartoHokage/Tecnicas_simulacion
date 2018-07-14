@@ -2,7 +2,7 @@ $(document).ready(function(){
     //valores estaticos para numeros aleatoreos
     
     $('#btn-generar_tabla').click(function(){
-        var a,c,x,m,rn=0,contador1=0;
+        var a,c,x,m,rn=0;
     a=81;
     c=89;
     x=11;
