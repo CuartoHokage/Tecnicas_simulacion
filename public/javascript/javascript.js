@@ -13,8 +13,8 @@ $(document).ready(function(){
     var demanda= $('#demanda_txt').val();
     var cantidadAleatorios=demanda;    
         var contador= 0;
+        //tabla Montecarlo general
         var htmlpuro='<table class="table table-striped"><thead><tr><th>Demanda</th><th>Aleatorio</th><th>P. Frecuencia</th><th>P. Acumulada</th><th>Indice menor</th><th>Indice mayor</th></tr></thead><tbody>';
-        
         var eventos= $('eventos_txt').val();
         var probabilidad= $('probabilidad_txt').val();
         while((contador++)<demanda){
@@ -36,5 +36,8 @@ $(document).ready(function(){
         }
         htmlpuro+='</tbody></table>';
         $('#table-responsive').html(htmlpuro)
+
+        //tabla de probabilidad
+        
     });
 });
