@@ -1,0 +1,63 @@
+<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-3 col-md-2 sidebar">
+					<div class="panel panel-default">
+						<div class="panel-heading">Elija el tipo de simulación</div>
+						<div class="panel-body">
+							<div class="list-group">
+								<a href="#" class="list-group-item">Montecarlo</a>
+								<a href="#" class="list-group-item">Línea de Espera</a>
+								<a href="#" class="list-group-item">Poisson</a>
+							</div>
+						</div>
+					</div>
+					<input type="button" id="btnconsultar" value="presioname">
+				</div>
+				<div class="col-sm-9  col-md-10 main">
+					<h2>Análisis estadisticos</h2>
+					<div class="col-sm-3 col-md-4 sidebar">
+						<div class="panel panel-default">
+						<div class="panel-heading">Análisis de demanda de probabilidad</div>
+						<div class="panel-body">
+							<form>
+								<div class="form-group">
+									<label>Demanda</label> 
+									<input class="form-control" type="text" id="demanda_txt"value="2">
+								</div>
+								<div class="form-group">
+									<label>Eventos</label>
+									<input class="form-control" type="text" id="eventos_txt">
+								</div>
+								<div class="form-group">
+									<label>Probabilidad</label>
+									<input class="form-control" type="text" id="probabilidad_txt">
+								</div>
+                                <div class="form-group">
+									<label>Generar números aleatorios</label>
+                                    <br>
+                                    <label>A:</label>
+									<input class="form-control" type="text" id="A_txt" value="81">
+                                    <label>C:</label>
+                                    <input class="form-control" type="text" id="C_txt" value="89">
+                                    <label>Xn:</label>
+                                    <input class="form-control" type="text" id="X_txt" value="11">
+                                    <label>M:</label>
+                                    <input class="form-control" type="text" id="M_txt" value="100">
+								</div>
+														
+								<input id="btn-generar_tabla2" class="btn btn-default" type="button" value="Añadir">
+
+							</form>
+							</div>
+						</div>
+					
+					
+					</div>
+					<div id="table-responsive" class="table-responsive">
+					</div><br>
+					<div id="tabla-probabilidades" class="table-responsive">
+					</div>
+				</div>
+						
+			</div>
+		</div>

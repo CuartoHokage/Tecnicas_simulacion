@@ -20,6 +20,12 @@ app.use('/api', api)
 // app.get('/login', (req, res)=>{
 // 	res.render('login')
 // })
+app.get('/lineaEspera', (req, res)=>{
+	res.render('lineaEspera')
+})
+app.get('/montecarlo', (req, res)=>{
+	res.render('montecarlo')
+})
 app.get('/', (req, res)=>{
 	res.render('index')
 })

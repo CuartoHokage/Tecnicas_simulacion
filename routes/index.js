@@ -4,6 +4,10 @@ const express= require('express');
 const api= express.Router()
 
 
+
+api.get('/poisson', (req, res)=>{
+	res.render('poisson')
+})
 // const peliculaControllers= require('../controllers/peliculaControllers')
 // //const auth= require('../middlewares/auth')
 // const userControllers= require('../controllers/userControllers')
