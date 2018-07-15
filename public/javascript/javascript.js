@@ -106,7 +106,7 @@ $(document).ready(function(){
                 }else{
                     tEspera=tSalida-a_Llegada;
                 }
-                tSalida=a_Llegada+tEspera+tServicio;
+                tSalida=a_Llegada+tEspera+a_Servicio;
             }
             htmlpuro2+='<tr>';
                 htmlpuro2+= '<td>'+contador+'</td>';
