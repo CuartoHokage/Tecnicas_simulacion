@@ -96,7 +96,9 @@ $(document).ready(function(){
             var a_Llegada=tLlegada.toFixed(2);
             var a_Servicio=tServicio.toFixed(2);
             a_Llegada=a_Llegada*100;
+            a_Llegada=Math.trunc(a_Llegada);
             a_Servicio=a_Servicio*100;
+            a_Servicio=Math.trunc(a_Servicio);
             if(contador==1){
                 tEspera=0,tOcio=0;
                 tSalida= a_Llegada+ a_Servicio;

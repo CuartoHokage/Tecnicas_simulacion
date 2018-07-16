@@ -8,6 +8,9 @@ const api= express.Router()
 api.get('/poisson', (req, res)=>{
 	res.render('poisson')
 })
+api.get('/inventario', (req, res)=>{
+	res.render('inventario')
+})
 // const peliculaControllers= require('../controllers/peliculaControllers')
 // //const auth= require('../middlewares/auth')
 // const userControllers= require('../controllers/userControllers')
