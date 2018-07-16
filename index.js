@@ -1,6 +1,6 @@
 'use strict'
 
-const mongoose= require('mongoose')
+//const mongoose= require('mongoose')
 const app = require('./app')
 const config= require('./config')
 //funcion para verificar si la base de datos de mongo esta conectada llamando desde el archivo config.js
