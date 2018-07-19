@@ -21,13 +21,17 @@ $(document).ready(function(){
         var eventos= $('eventos_txt').val();
         var probabilidad= $('probabilidad_txt').val();
         while((contador++)<demanda){
-            var paso1=a*x;
-            var resultado= ((paso1+c)/m).toFixed(2);
-             resultado= (resultado- Math.trunc(resultado)).toFixed(2);
-             resultado= resultado*100;
-             resultado= Math.trunc(resultado);
+            var paso1=parseInt(a)*parseInt(x);
+            var resultado= ((paso1+parseInt(c))/parseInt(m)).toFixed(3);
+            //aleatorio 
+            resultado= (resultado- Math.trunc(resultado)).toFixed(3);
+             //aleatorio
+             rn= resultado;
+             resultado= resultado*m;
+             
+             resultado= Math.round(resultado);
+             
              x=resultado;
-             rn= resultado/m;
             htmlpuro+='<tr>';
                 htmlpuro+= '<td>'+contador+'</td>';
                 htmlpuro+= '<td>'+rn+'</td>';
@@ -64,13 +68,17 @@ $(document).ready(function(){
         var eventos= $('eventos_txt').val();
         var probabilidad= $('probabilidad_txt').val();
         while((contador++)<demanda){
-            var paso1=a*x;
-            var resultado= ((paso1+parseInt(c))/parseInt(m)).toFixed(2);
-             resultado= (resultado- Math.trunc(resultado)).toFixed(2);
-             resultado= resultado*100;
-             resultado= Math.trunc(resultado);
+            var paso1=parseInt(a)*parseInt(x);
+            var resultado= ((paso1+parseInt(c))/parseInt(m)).toFixed(3);
+            //aleatorio 
+            resultado= (resultado- Math.trunc(resultado)).toFixed(3);
+             //aleatorio
+             rn= resultado;
+             resultado= resultado*m;
+             resultado= Math.round(resultado);
+             
              x=resultado;
-             rn= resultado/m;
+             
             htmlpuro+='<tr>';
                 htmlpuro+= '<td>'+contador+'</td>';
                 htmlpuro+= '<td>'+x+'</td>';
