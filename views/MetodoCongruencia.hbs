@@ -21,23 +21,34 @@
 						<div class="panel-body">
 							<form>
 								<div class="form-group">
+									<label>Demanda</label> 
+									<input class="form-control" type="text" id="demanda_txt"value="20">
+								</div>
+								
+                                <div class="form-group">
 									<div class="form-group">
-                                    <label>Peticiones por Hora:</label>
-									<input class="form-control" type="text" id="N_Peticiones_txt" value="81">
+                                    <label>A:</label>
+									<input class="form-control" type="text" id="A_txt" value="81">
 									</div>
 									<div class="form-group">
-                                    <label>Tiempo de Servicio(minutos):</label>
-                                    {{!-- <input type="text" name="D" id="D" value=""   maxlength="3"/> --}}
-                                    <input class="form-control" type="text" id="T_Servicio_txt" value="6">
+                                    <label>C:</label>
+                                    <input class="form-control" type="text" id="C_txt" value="89">
+									</div>
+									<div class="form-group">
+                                    <label>Xn:</label>
+                                    <input class="form-control" type="text" id="X_txt" value="11">
+									</div>
+									<div class="form-group">
+                                    <label>M:</label>
+                                    <input class="form-control" type="text" id="M_txt" value="100">
 									</div>
 								</div>				
-								<input id="btn-generar_tabla4" class="btn btn-default" type="button" value="Generar">
+								<input id="btn-generar_tabla3" class="btn btn-default" type="button" value="Generar">
 							</form>
 							</div>
 						</div>
 					</div>
-                    <div class="form-group" id="variables"></div>
-					<div id="table-responsives"class="table-responsive">
+					<div id="table-responsives" style="overflow:scroll;height: 250px;"class="table-responsive">
 					</div>
 				</div>
 						

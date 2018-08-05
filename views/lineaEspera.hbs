@@ -1,19 +1,6 @@
 <div class="container-fluid">
 			<div class="row">
-				<div class="col-sm-3 col-md-2 sidebar">
-					<div class="panel panel-default">
-						<div class="panel-heading">Elija el tipo de simulación</div>
-						<div class="panel-body">
-							<div class="list-group">
-								<a href="#" class="list-group-item">Montecarlo</a>
-								<a href="#" class="list-group-item">Línea de Espera</a>
-								<a href="#" class="list-group-item">Poisson</a>
-							</div>
-						</div>
-					</div>
-					<input type="button" id="btnconsultar" value="presioname">
-				</div>
-				<div class="col-sm-9  col-md-10 main">
+				<div class="col-sm-9  col-md-11 main">
 					<h2>Modelo de Línea de Espera </h2>
 					<div class="col-sm-3 col-md-4 sidebar">
 						<div class="panel panel-default">
@@ -22,7 +9,7 @@
 							<form>
 								<div class="form-group">
 									<label>Demanda</label> 
-									<input class="form-control" type="text" id="demanda_txt"value="2">
+									<input class="form-control" type="text" id="demanda_txt"value="10">
 								</div>
 								
                                 <div class="form-group">
@@ -46,15 +33,16 @@
 									</div>
 									<div class="form-group">
                                     <label>Miu:</label>
-                                    <input class="form-control" type="text" id="M_txt" value="15">
+                                    <input class="form-control" type="text" id="Miu_txt" value="20">
 									</div>
 									<div class="form-group">
                                     <label>Landa:</label>
-                                    <input class="form-control" type="text" id="M_txt" value="131">
+                                    <input class="form-control" type="text" id="Landa_txt" value="15">
 									</div>
+									
 								</div>
 														
-								<input id="btn-generar_tabla2" class="btn btn-default" type="button" value="Añadir">
+								<input id="btn-generar_tabla2"  class="btn btn-default" type="button" value="Añadir">
 
 							</form>
 							</div>
@@ -62,10 +50,11 @@
 					
 					
 					</div>
-					<div id="table-responsive" style="overflow:scroll; height: 250px;"class="table-responsive">
+					<div id="tabla-probabilidades" style="overflow:scroll; height: 250px;" class="table-responsive">
 					</div><br>
-					<div id="tabla-probabilidades" class="table-responsive">
+					<div id="table-responsive" style="overflow:scroll; height: 250px;"class="table-responsive">
 					</div>
+					
 				</div>
 						
 			</div>

@@ -26,6 +26,10 @@ app.get('/lineaEspera', (req, res)=>{
 app.get('/montecarlo', (req, res)=>{
 	res.render('montecarlo')
 })
+
+app.get('/metodo-congruencial', (req, res)=>{
+	res.render('MetodoCongruencia')
+})
 app.get('/', (req, res)=>{
 	res.render('index')
 })
