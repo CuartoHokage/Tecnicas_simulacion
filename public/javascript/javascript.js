@@ -294,6 +294,9 @@ $(document).ready(function () {
                 miu=t_servicios;
                 landa=n_peticiones;
             }
+            if (miu==landa) {
+                alert('Miu y Landa no pueden ser iguales pues dará un error matemático en las fórmulas')
+            }
             //console.log(miu, landa);
             //probabilidad de que no hayan peticiones
             probabilidad_nopeticiones= (1-(landa/miu)).toFixed(3);
@@ -303,7 +306,7 @@ $(document).ready(function () {
             //Tiempo de espera promedio en minutos
             tiempo_promedioEspera=((1/(miu-landa))*60).toFixed(3)
             //Tiempo promedio de servicio
-            tiempo_promedioServicio=(lq/landa).toFixed(3)
+            tiempo_promedioServicio=((lq/landa)*60).toFixed(3)
             //Probabilidad de Espera
             probabilidad_espera=(landa/miu).toFixed(3)
             var variables= '<label>Miu:'+miu+'</label><br>';
